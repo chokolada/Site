@@ -1,0 +1,99 @@
+body{
+    font-family: Inter;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.back {
+    background-image: url(https://images.unsplash.com/photo-1556047573-ef501e2a3325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 720px;
+    margin-top: -9px;
+    margin-left: -9px;
+    margin-bottom: -24px;
+    margin-right: 9px;
+    border: 5px solid;
+
+}
+.text {
+    background-color: #000000cb;
+    display: flex;
+    font-size: 30px;
+    font-display: uppercase;
+    color: #18dbb8;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid;
+    margin-top: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+}   
+.button {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: #12705f;
+    border-radius: 4px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+.button_text{
+    text-decoration: none;
+    color: #18dbb8;
+    background-color: #12705f;
+}
+.popup{
+    position: fixed;
+    widows: 100%;
+    height: 100%;
+    background-color: #000000cb;
+    top: 0;
+    left: 0;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-self: center;
+    padding: 30px 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup_body{
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-self: center;
+    padding: 30px 10px;
+}
+.popup_content{
+    margin: 20%;
+    background-color: #000000cb;
+    color: #18dbb8;
+    max-width: 100%;
+    position: relative;
+}
+.popup_close{
+    top: 10px;
+    right: 10px;
+    border: 1px white solid;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+.popup_text p{
+ padding-top: -10px;
+ font-size: 15px;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
